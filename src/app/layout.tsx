@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={"w-full h-full flex flex-col p-0 m-0 box-border font-[Future] " + `antialiased`}>
+      <body className={"w-full h-full flex flex-col p-0 m-0 box-border font-[Future] bg-darkblack text-primary " + `antialiased`}>
         <header>
           <Navbar />
         </header>
