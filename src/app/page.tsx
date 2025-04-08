@@ -11,10 +11,10 @@ interface Movie {
 }
 
 export default async function HomePage() {
-  const apiKey = process.env.NEXT_PUBLIC_TDM_API_KEY;
+  const apiKey = process.env.TDM_API_KEY;
   const response = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`);
   const movies: Movie[] = response.data.results;
-
+ 
   return (
     <div className="w-full h-full p-5">
       {
